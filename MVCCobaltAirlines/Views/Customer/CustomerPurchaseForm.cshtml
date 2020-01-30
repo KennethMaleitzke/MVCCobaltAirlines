@@ -1,0 +1,47 @@
+﻿
+@{ 
+    ViewBag.Title = "CustomerPurchaseForm";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <title>Customer Purchase Form</title>
+</head>
+<body>
+    <header>
+        <h2>Customer Purchase Form</h2>
+    </header>
+    <img src="~/Content/palm.png" alt="Cobalt Airlines Logo" style="float:right; width:200px;" />
+    <form name="Purchase" method="post">
+        <p>
+        <p>Your First Name: <input type="text" name="fName" id="fName" /></p>
+        <p>Your Last Name: <input type="text" name="lName" id="lName" /></p>
+        Select your destination from the list:
+        <select name="destination" id="destination">
+            <option value="hawaii">Hawaii</option>
+            <option value="japan">Japan</option>
+            <option value="brazil">Brazil</option>
+            <option value="italy">Italy</option>
+            <option value="australia">Australia</option>
+        </select>
+        <p>City Name: <input type="text" name="cName" id="cName" /></p>
+        <p>Payment: <input type="text" value="$100.00" name="payment" id="payment" />
+
+        <p>
+            Payment Method:
+            <select name="payment">
+                <option value="paypal">PayPal</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">MasterCard</option>
+                <option value="check">Check</option>
+                <option value="moneyorder">Money Order</option>
+            </select>
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+</body>
+</html>
+
