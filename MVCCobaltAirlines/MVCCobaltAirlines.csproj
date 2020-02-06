@@ -345,6 +345,8 @@
     <Content Include="Views\Customer\CustomerPurchaseForm.cshtml" />
     <Content Include="Views\Customer\ConfirmCustomerPurchase.cshtml" />
     <Content Include="Views\Customer\CustomerNumber.cshtml" />
+    <Content Include="Views\Customer\CustomerList.cshtml" />
+    <Content Include="Views\Customer\CustomerLuggageWeight.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

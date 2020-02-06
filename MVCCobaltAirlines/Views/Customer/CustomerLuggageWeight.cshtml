@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Customer Luggage Weight";
+    var LuggageMessage = "";
+    if (IsPost)
+    {
+        var w = Request["weight"];
+        var weight = (w.AsFloat());
+        var message = "";
+        if (weight > 50)
+        {
+            message = "Your luggage is overweight please remove some items!";
+        }
+        else if (weight == 0)
+        {
+            message = "The value you entered is invalid, please enter the correct weight for your luggage.";
+        }
+        else
+        {
+            message = "Your luggage is under the max weight, you are all set to proceed!";
+        }
+
+        LuggageMessage = "Your luggage is " + weight + " pounds. " + message;
+    }
+}
+
+<h2>Customer Luggage Weight</h2>
+<html>
+<body>
+    <form action="" method="post">
+        <p>ID:<input type="number" name="ID" id="ID" /></p>
+        <p>Weight:<input type="number" name="weight" id="weight" /></p>
+        <p><button type="submit">Submit</button></p>
+    </form>
+    <p>@LuggageMessage</p>
+</body>
+</html>
+

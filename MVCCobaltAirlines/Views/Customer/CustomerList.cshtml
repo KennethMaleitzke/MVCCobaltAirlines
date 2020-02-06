@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Customer List";
+    string[] customers ={ "Shaggy Rogers", "Fred Flintstone", "Ezra Bridger", "George Jetson", "Barney Rubble", "Daphne Blake", "Sabine Wren", "Scooby Doo", "Freddy Jones", "Jane Jetson",
+        "Wilma Flintstone", "Pebbles Flintstone", "Betty Rubble", "Garazeb Orrelios", "Hera Syndulla", "Kanan Jarrus"};
+}
+    <div style="background-color:lightcyan; padding:1%; margin-left:-4%;">
+        <img src="~/Content/palm.png" alt="Cobalt Airlines Photo"
+             style="float:right; width:35%; margin-top:2%; margin-right:5%;" />
+        <h2>Customer List</h2>
+        <ul>
+            @foreach (var m in customers)
+            {
+                <li>@m</li>
+            }
+        </ul>
+    </div>

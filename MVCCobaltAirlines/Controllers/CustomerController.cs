@@ -32,5 +32,13 @@ namespace MVCCobaltAirlines.Controllers
             ViewBag.Message = HttpUtility.HtmlEncode("Your temporary customer number is: " + customerNumber);
             return View();
         }
+        public ActionResult CustomerList()
+        {
+            return View();
+        }
+        public ActionResult CustomerLuggageWeight()
+        {
+            return View();
+        }
     }
 }      
